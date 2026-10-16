@@ -15,6 +15,10 @@ interface PageProps {
     params: Promise<Params>;
 }
 
+export function generateStaticParams() {
+    return FeatureV3Data.map(item => ({ id: String(item.id) }));
+}
+
 const BlogDetailsPage = async ({ params }: PageProps) => {
 
     const { id } = await params;

@@ -17,6 +17,10 @@ interface PageProps {
     params: Promise<Params>;
 }
 
+export function generateStaticParams() {
+    return TeamV1Data.map(item => ({ id: String(item.id) }));
+}
+
 const TeamDetailsPage = async ({ params }: PageProps) => {
 
     const { id } = await params;
