@@ -69,39 +69,6 @@ const FooterV1 = () => {
                             </div>
                         </div>
 
-                        {/* Social Section */}
-                        <div className="col-md-3">
-                            <div className="footer-widget footer-link">
-                                <div className="footer-widget-top">
-                                    <h4>Social</h4>
-                                    <ul>
-                                        <li>
-                                            <a className="with-border" href="https://instagram.com/" target="_blank">
-                                                <Image src={btnArrow} alt="icon" /> Instagram
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="with-border" href="https://twitter.com/" target="_blank">
-                                                <Image src={btnArrow} alt="icon" /> Twitter
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="with-border" href="https://behance.com/" target="_blank">
-                                                <Image src={btnArrow} alt="icon" /> Behance
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="with-border" href="https://dribbble.com/" target="_blank">
-                                                <Image src={btnArrow} alt="icon" /> Dribbble
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="copyright">
-                                    BUDAPEST, UNGHERIA
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className="footer-bottom">

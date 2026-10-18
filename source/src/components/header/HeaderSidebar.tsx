@@ -3,7 +3,6 @@
 "use client";
 import sidebarbg from "@/assets/images/sidebarbg.png";
 import Image from "next/image";
-import SocialShareV1 from "../social/SocialShareV1";
 import { useEffect, useState } from "react";
 
 const HeaderSidebar = () => {
@@ -94,11 +93,6 @@ const HeaderSidebar = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="header-sidebar-bottom">
-                        <ul>
-                            <SocialShareV1 />
-                        </ul>
-                    </div>
                 </div>
             </div>
         </>
