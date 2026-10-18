@@ -2,37 +2,37 @@
     {
         "id": 1,
         "activeClass": "active",
-        "title": "I. Awards Jury",
-        "date": "2021-2024"
+        "title": "I. Amazon.de",
+        "date": "Germania"
     },
     {
         "id": 2,
         "activeClass": "",
-        "title": "II. Studio of the Year",
-        "date": "2023"
+        "title": "II. Amazon.it",
+        "date": "Italia"
     },
     {
         "id": 3,
         "activeClass": "",
-        "title": "III. Cannes Lions",
-        "date": "2022"
+        "title": "III. Amazon.fr",
+        "date": "Francia"
     },
     {
         "id": 4,
         "activeClass": "",
-        "title": "IV. Adobe Design Achievement Awards",
-        "date": "2022-2023"
+        "title": "IV. Amazon.es",
+        "date": "Spagna"
     },
     {
         "id": 5,
         "activeClass": "",
-        "title": "V. D&AD Awards",
-        "date": "2021"
+        "title": "V. Amazon.nl · Amazon.com.be",
+        "date": "Benelux"
     },
     {
         "id": 6,
         "activeClass": "",
-        "title": "VI. Red Dot Design Awards",
-        "date": "2020-2021"
+        "title": "VI. Amazon.pl · Amazon.se · Amazon.ie",
+        "date": "Polonia, Svezia, Irlanda"
     }
 ]

@@ -25,23 +25,23 @@ const PriceV1 = () => {
                     <div className="section-header section-header2">
                         <span className="section-subtitle">
                             <Image src={Union} alt="icon" />
-                            PRICING PLANS
+                            PACCHETTI
                         </span>
                         <h2 className="section-title section-title2">
-                            Flexible Plans, <span>Powerful Results</span>
+                            Pacchetti chiari, <span>su misura</span>
                         </h2>
                         <p className="section-desc">
-                            {`Whether you're a startup looking for a boost or an established brand aiming to elevate your presence,`}<br />
-                            we have a plan that fits your goals and budget.
+                            Che tu stia aprendo il tuo primo account o voglia crescere in tutta Europa,<br />
+                            componiamo il pacchetto più adatto ai tuoi prodotti e ai tuoi mercati.
                         </p>
                     </div>
                     <div className="pricing_nav_wrap">
                         <ul className="pricing_nav nav-tabs" id="myTab" role="tablist" ref={navRef}>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+                                <button className="nav-link active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">Avvio</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="annual-tab" data-bs-toggle="tab" data-bs-target="#annual" type="button" role="tab" aria-controls="annual" aria-selected="false">Annual <span>-20%</span></button>
+                                <button className="nav-link" id="annual-tab" data-bs-toggle="tab" data-bs-target="#annual" type="button" role="tab" aria-controls="annual" aria-selected="false">Gestione mensile</button>
                             </li>
                         </ul>
                         <span className="nav-hover-shape" ref={indicatorRef} style={{ left: 439, opacity: 1 }}>
@@ -59,22 +59,22 @@ const PriceV1 = () => {
                                 </div>
                                 <div className="pricing-box" data-aos="fade-up">
                                     <div className="pricing-header">
-                                        <span className="title">Standard Plan</span>
-                                        <h3 className="price">$3.500<span>/month</span></h3>
+                                        <span className="title">Compliance Germania</span>
+                                        <h3 className="price">Su preventivo<span> / una tantum</span></h3>
                                         <p className="content">
-                                            <span className="required">*</span> Ideal for growing businesses that need more advanced solutions.
+                                            <span className="required">*</span> Per chi vuole vendere su Amazon.de in regola con gli obblighi EPR.
                                         </p>
                                         <ul className="feature-lists">
-                                            <li><span className="icon"><i className="las la-check" /></span> Custom website design</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Basic SEO optimization</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Social media setup</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Monthly performance reports</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Email support</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Verifica degli obblighi per prodotto</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Registrazione WEEE presso Stiftung EAR</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Registrazione batterie</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Registrazione LUCID e sistema duale</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Caricamento numeri EPR in Seller Central</li>
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
-                                        <Link href="#" className="theme-btn">
-                                            {`Let's Start Now`} <Image src={btnArrow} alt="icon" />
+                                        <Link href="/contact" className="theme-btn">
+                                            Richiedi un preventivo <Image src={btnArrow} alt="icon" />
                                         </Link>
                                     </div>
                                 </div>
@@ -83,22 +83,22 @@ const PriceV1 = () => {
                                         <Image src={featuredIcon} alt="icon" />
                                     </span>
                                     <div className="pricing-header">
-                                        <span className="title">Professional Plan</span>
-                                        <h3 className="price">$6.500<span>/month</span></h3>
+                                        <span className="title">Brand Launch</span>
+                                        <h3 className="price">Su preventivo<span> / una tantum</span></h3>
                                         <p className="content">
-                                            <span className="required">*</span> Ideal for growing businesses that need more advanced solutions.
+                                            <span className="required">*</span> Per i brand che vogliono partire su Amazon con le basi giuste.
                                         </p>
                                         <ul className="feature-lists">
-                                            <li><span className="icon"><i className="las la-check" /></span> Everything in Standard Plan</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Advanced SEO and keyword targeting</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Content creation and blog management</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Social media management and advertising</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Priority email and phone support</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Apertura e audit dell'account</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Coordinamento deposito marchio EUIPO / UIBM</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Iscrizione ad Amazon Brand Registry</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Listing ottimizzati e contenuti A+</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Connettore eCommerce ↔ Amazon</li>
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
                                         <Link href="/contact" className="theme-btn">
-                                            {`Let's Start Now`} <Image src={btnArrow} alt="icon" />
+                                            Richiedi un preventivo <Image src={btnArrow} alt="icon" />
                                         </Link>
                                     </div>
                                 </div>
@@ -114,22 +114,22 @@ const PriceV1 = () => {
                                 </div>
                                 <div className="pricing-box" data-aos="fade-up">
                                     <div className="pricing-header">
-                                        <span className="title">Standard Plan</span>
-                                        <h3 className="price">$1,500<span>/month</span></h3>
+                                        <span className="title">Store Care</span>
+                                        <h3 className="price">Su preventivo<span> / mese</span></h3>
                                         <p className="content">
-                                            <span className="required">*</span> Ideal for growing businesses that need more advanced solutions.
+                                            <span className="required">*</span> Per i seller che vogliono uno store curato e sempre in regola.
                                         </p>
                                         <ul className="feature-lists">
-                                            <li><span className="icon"><i className="las la-check" /></span> Custom website design</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Basic SEO optimization</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Social media setup</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Monthly performance reports</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Email support</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Gestione listing e catalogo</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Monitoraggio account health</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Rinnovi e dichiarazioni EPR</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Supporto sui casi con Amazon</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Report mensile</li>
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
                                         <Link href="/contact" className="theme-btn">
-                                            {`Let's Start Now`} <Image src={btnArrow} alt="icon" />
+                                            Richiedi un preventivo <Image src={btnArrow} alt="icon" />
                                         </Link>
                                     </div>
                                 </div>
@@ -138,22 +138,22 @@ const PriceV1 = () => {
                                         <Image src={featuredIcon} alt="icon" />
                                     </span>
                                     <div className="pricing-header">
-                                        <span className="title">Professional Plan</span>
-                                        <h3 className="price">$6,500<span>/month</span></h3>
+                                        <span className="title">Full Service</span>
+                                        <h3 className="price">Su preventivo<span> / mese</span></h3>
                                         <p className="content">
-                                            <span className="required">*</span> Ideal for growing businesses that need more advanced solutions.
+                                            <span className="required">*</span> Per chi vuole crescere su più marketplace europei con un unico partner.
                                         </p>
                                         <ul className="feature-lists">
-                                            <li><span className="icon"><i className="las la-check" /></span> Everything in Standard Plan</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Advanced SEO and keyword targeting</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Content creation and blog management</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Social media management and advertising</li>
-                                            <li><span className="icon"><i className="las la-check" /></span> Priority email and phone support</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Tutto quello che include Store Care</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Gestione campagne Amazon Ads</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Connettori e sincronizzazione multicanale</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Espansione su nuovi marketplace UE</li>
+                                            <li><span className="icon"><i className="las la-check" /></span> Referente dedicato</li>
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
                                         <Link href="/contact" className="theme-btn">
-                                            {`Let's Start Now`} <Image src={btnArrow} alt="icon" />
+                                            Richiedi un preventivo <Image src={btnArrow} alt="icon" />
                                         </Link>
                                     </div>
                                 </div>

@@ -5,16 +5,25 @@ import AnimatedText from "../animated/AnimatedText";
 import Link from "next/link";
 import btnArrow from '@/assets/images/btn-arrow.svg';
 import useScaleDownAnimation from "@/hooks/useScaleDownAnimation";
+
+const ROMAN = ["I", "II", "III", "IV", "V", "VI"];
+
 interface DataType {
     name?: string;
     thumbFull1?: string;
     thumbFull2?: string;
     text?: string;
     price?: string;
+    features?: string[];
+    intro?: string;
+    keyText1?: string;
+    keyText2?: string;
+    benefit?: string;
+    paragraphs?: string[];
 }
 
 const ServiceDetailsContent = ({ serviceData }: { serviceData: DataType }) => {
-    const { name, text, price, thumbFull1, thumbFull2 } = serviceData
+    const { name, text, price, thumbFull1, thumbFull2, features = [], intro, keyText1, keyText2, benefit, paragraphs = [] } = serviceData
 
     const containerRef = useScaleDownAnimation('.scaleDown');
 
@@ -29,31 +38,31 @@ const ServiceDetailsContent = ({ serviceData }: { serviceData: DataType }) => {
                             {name}
                         </span>
                         <AnimatedText>
-                            Our approach to brand identity goes beyond the conventional. We blend strategic insight with creative flair to craft identities that are not only visually striking but also resonate deeply with target audiences.
+                            {intro}
                         </AnimatedText>
                     </div>
                 </div>
                 <div className="project-single-body">
                     <div className="feature-project">
                         <div className="img-box" >
-                            <Image src={`/assets/images/${thumbFull1}`} alt="project-single" width={1900} height={925} />
+                            <Image src={`/assets/images/${thumbFull1}`} alt={name ?? "Servizio"} width={1900} height={925} />
                         </div>
                         <div className="feature-project-infos">
                             <div className="feature-project-info-box project-name">
-                                <span className="title">Service :</span>
+                                <span className="title">Servizio:</span>
                                 <span className="subtitle">{name}</span>
                             </div>
                             <div className="feature-project-info-box project-description">
-                                <span className="title">Description:</span>
+                                <span className="title">Descrizione:</span>
                                 <span className="subtitle">{text}</span>
                             </div>
                             <div className="feature-project-info-box">
-                                <span className="title">Pricing:</span>
-                                <span className="subtitle">$ {price}</span>
+                                <span className="title">Prezzo:</span>
+                                <span className="subtitle">{price}</span>
                             </div>
                             <div className="feature-project-info-box">
                                 <Link href="/contact" className="theme-btn">
-                                    GET STARTED
+                                    RICHIEDI UN PREVENTIVO
                                     <Image src={btnArrow} alt="icon" />
                                 </Link>
                             </div>
@@ -63,38 +72,38 @@ const ServiceDetailsContent = ({ serviceData }: { serviceData: DataType }) => {
                         <div className="section-header">
                             <span className="section-subtitle">
                                 <Image src={Union} alt="icon" />
-                                KEY FEATURES
+                                COSA INCLUDE
                             </span>
                             <div className="right">
                                 <AnimatedText>
-                                    To build strong, supportive teams within a design agency, clearly define project goals and roles, ensuring everyone knows their work. Foster open communication and mutual respect to create a collaboration.
+                                    {keyText1}
                                 </AnimatedText>
                                 <AnimatedText>
-                                    At our creative agency, we push the limits of brand identity, working together to exceed expectations and deliver exceptional results through innovative design and strategic insight.
+                                    {keyText2}
                                 </AnimatedText>
                                 <ul>
-                                    <li>I. Legacy Modernization</li>
-                                    <li>II. Solution Design</li>
-                                    <li>III. Technology Enabling</li>
-                                    <li>IV. Mobile-First Systems</li>
+                                    {features.map((feature, index) =>
+                                        <li key={feature}>{ROMAN[index]}. {feature}</li>
+                                    )}
                                 </ul>
                             </div>
                         </div>
                         <div className="full-image" ref={containerRef}>
-                            <Image className="scaleDown" src={`/assets/images/${thumbFull2}`} alt="project-single" width={1900} height={925} />
+                            <Image className="scaleDown" src={`/assets/images/${thumbFull2}`} alt={`${name} - come lavoriamo`} width={1900} height={925} />
                         </div>
                         <div className="section-header">
                             <span className="section-subtitle">
                                 <Image src={Union} alt="icon" />
-                                SERVICE BENEFITS
+                                I VANTAGGI
                             </span>
                             <div className="right">
                                 <AnimatedText>
-                                    Our brand identity services deliver significant benefits that drive your business forward. By crafting a unique and coherent brand identity, we help you stand out in a crowded marketplace.
+                                    {benefit}
                                 </AnimatedText>
                                 <div className="paragraphs">
-                                    <p>Our process ensures that every visual and verbal element—from logos and color schemes to messaging and brand voice—aligns with your strategic goals, creating a unified and compelling brand presence. This alignment not only enhances recognition and fosters customer loyalty but also positions your brand as a leader in your industry.</p>
-                                    <p>With our tailored solutions, you gain clarity and consistency in your brand communication, ultimately leading to increased visibility, stronger market positioning, and sustainable growth.</p>
+                                    {paragraphs.map(paragraph =>
+                                        <p key={paragraph}>{paragraph}</p>
+                                    )}
                                 </div>
                             </div>
                         </div>

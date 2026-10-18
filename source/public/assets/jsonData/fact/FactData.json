@@ -4,31 +4,31 @@
         "activeClass": "active",
         "thumb": "fun-fact1.png",
         "delay": "100",
-        "title": "Years Experience",
-        "end": "12"
+        "title": "Servizi integrati per i seller Amazon",
+        "end": "5"
     },
     {
         "id": 2,
         "activeClass": "",
         "thumb": "fun-fact2.png",
         "delay": "200",
-        "title": "Completed Projects",
-        "end": "25"
+        "title": "Marketplace Amazon in Europa",
+        "end": "9"
     },
     {
         "id": 3,
         "activeClass": "",
         "thumb": "fun-fact3.png",
         "delay": "400",
-        "title": "Award Winning",
-        "end": "110"
+        "title": "Registri EPR tedeschi: WEEE, batterie, imballaggi",
+        "end": "3"
     },
     {
         "id": 4,
         "activeClass": "",
         "thumb": "fun-fact4.png",
         "delay": "600",
-        "title": "Satisfied Clients",
-        "end": "4"
+        "title": "Referente unico per tutto",
+        "end": "1"
     }
 ]

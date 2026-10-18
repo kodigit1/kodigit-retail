@@ -2,45 +2,126 @@
     {
         "id": 1,
         "activeClass": "active",
-        "name": "Branding Identity",
-        "thumb": "service1.png",
-        "thumbFull1": "service-single1-1.jpg",
-        "thumbFull2": "service-single1-2.jpg",
-        "text": "Brand identity is the visual representation of a brand, including logos, colors, and messaging.",
-        "price": "3000",
-        "icon": "service-icon1.svg"
+        "name": "Connettori eCommerce",
+        "thumb": "kodigit/service-1.svg",
+        "thumbFull1": "kodigit/service-1-a.svg",
+        "thumbFull2": "kodigit/service-1-b.svg",
+        "text": "Colleghiamo il tuo sito eCommerce, ERP o PIM ad Amazon e ai principali marketplace europei: un solo catalogo, stock e prezzi sempre allineati, ordini gestiti da un unico punto.",
+        "price": "Su preventivo",
+        "icon": "kodigit/icon-1.svg",
+        "features": [
+            "Integrazione Shopify, WooCommerce, PrestaShop, Magento",
+            "Sincronizzazione stock e prezzi",
+            "Ordini, spedizioni e resi centralizzati",
+            "Monitoraggio feed ed errori"
+        ],
+        "intro": "Vendere su più canali non deve significare aggiornare a mano dieci pannelli diversi. Colleghiamo il tuo gestionale ai marketplace per far viaggiare i dati in automatico, senza errori e senza rotture di stock.",
+        "keyText1": "Partiamo da un'analisi del tuo stack: piattaforma eCommerce, ERP, PIM, magazzino e corrieri. Scegliamo il connettore più adatto alle tue dimensioni, dalla PMI che vende su due marketplace all'azienda con decine di canali in Europa.",
+        "keyText2": "Mappiamo categorie e attributi per ogni marketplace, impostiamo le regole di prezzo e di disponibilità e teniamo sotto controllo i feed, intervenendo prima che un errore blocchi le tue offerte.",
+        "benefit": "Un catalogo unico che alimenta tutti i canali: meno lavoro manuale, meno errori e più tempo per far crescere le vendite.",
+        "paragraphs": [
+            "Con stock e prezzi sincronizzati in tempo quasi reale eviti overselling e cancellazioni, che su Amazon pesano sulle metriche dell'account. Gli ordini di tutti i canali arrivano nel tuo gestionale, pronti per essere evasi.",
+            "Quando decidi di aprire un nuovo marketplace, il lavoro è già fatto: basta attivare il canale e adattare i contenuti, senza ricostruire il catalogo da zero."
+        ]
     },
     {
         "id": 2,
         "activeClass": "",
-        "name": "Interactive Design",
-        "thumb": "service2.png",
-        "thumbFull1": "service-single2-1.jpg",
-        "thumbFull2": "service-single2-2.jpg",
-        "text": "Brand identity is the visual representation of a brand, including logos, colors, and messaging.",
-        "price": "4000",
-        "icon": "service-icon2.svg"
+        "name": "Gestione Store Amazon",
+        "thumb": "kodigit/service-2.svg",
+        "thumbFull1": "kodigit/service-2-a.svg",
+        "thumbFull2": "kodigit/service-2-b.svg",
+        "text": "Gestiamo il tuo account Seller o Vendor Central dall'apertura alla crescita: audit, listing ottimizzati, contenuti A+, campagne pubblicitarie e salute dell'account.",
+        "price": "Su preventivo",
+        "icon": "kodigit/icon-2.svg",
+        "features": [
+            "Apertura e audit dell'account",
+            "Listing SEO e contenuti A+",
+            "Campagne Amazon Ads (PPC)",
+            "Account health e report mensili"
+        ],
+        "intro": "Il tuo store Amazon è un negozio aperto 24 ore su 24 in tutta Europa. Ce ne occupiamo ogni giorno, come se fosse nostro, perché tu possa concentrarti sul prodotto.",
+        "keyText1": "Iniziamo con un audit completo: struttura del catalogo, qualità dei listing, prezzi, recensioni, metriche di performance e salute dell'account. Ne esce un piano d'azione con priorità chiare.",
+        "keyText2": "Poi passiamo all'operatività: ottimizziamo titoli, bullet point e parole chiave, creiamo contenuti A+ e Brand Store, gestiamo le campagne pubblicitarie e rispondiamo ai casi aperti con il supporto venditori.",
+        "benefit": "Uno store curato vende di più e corre meno rischi: listing che si fanno trovare, campagne che rendono e un account sempre in regola.",
+        "paragraphs": [
+            "Lavoriamo su Seller Central e Vendor Central e seguiamo sia il marketplace italiano sia quelli europei, con listing tradotti e adattati a ogni mercato.",
+            "Ogni mese ricevi un report chiaro con vendite, spesa pubblicitaria, ACoS e azioni svolte, così sai sempre dove stanno andando il tuo budget e il tuo business."
+        ]
     },
     {
         "id": 3,
         "activeClass": "",
-        "name": "Development",
-        "thumb": "service3.png",
-        "thumbFull1": "service-single3-1.jpg",
-        "thumbFull2": "service-single3-2.jpg",
-        "text": "Brand identity is the visual representation of a brand, including logos, colors, and messaging.",
-        "price": "3500",
-        "icon": "service-icon3.svg"
+        "name": "Compliance EPR Germania",
+        "thumb": "kodigit/service-3.svg",
+        "thumbFull1": "kodigit/service-3-a.svg",
+        "thumbFull2": "kodigit/service-3-b.svg",
+        "text": "Ti accompagniamo nelle registrazioni obbligatorie per vendere su Amazon.de: WEEE presso Stiftung EAR, batterie, imballaggi su LUCID, con rappresentante autorizzato in Germania.",
+        "price": "Su preventivo",
+        "icon": "kodigit/icon-3.svg",
+        "features": [
+            "Registrazione WEEE (ElektroG)",
+            "Registrazione batterie (BattDG)",
+            "Imballaggi: LUCID e sistema duale",
+            "Rappresentante autorizzato e dichiarazioni"
+        ],
+        "intro": "In Germania la responsabilità estesa del produttore (EPR) è un requisito per vendere: senza numeri di registrazione validi Amazon può bloccare le tue offerte. Ti guidiamo passo per passo.",
+        "keyText1": "Verifichiamo quali obblighi riguardano i tuoi prodotti: apparecchi elettrici ed elettronici (WEEE), batterie, anche se integrate nel prodotto, e imballaggi. Un prodotto con batteria richiede sia la registrazione WEEE sia quella batterie.",
+        "keyText2": "Prepariamo e presentiamo le domande presso Stiftung EAR e il registro LUCID, coordiniamo la nomina del rappresentante autorizzato in Germania e la partecipazione al sistema duale per gli imballaggi.",
+        "benefit": "Numeri EPR validi, caricati correttamente in Seller Central, e un calendario delle scadenze sotto controllo: niente blocchi delle offerte e niente sanzioni.",
+        "paragraphs": [
+            "Per i prodotti elettrici Amazon non offre in Germania il servizio di adesione per conto del venditore: servono registrazioni tedesche proprie. Ci occupiamo di tutto, dalla raccolta dei dati di prodotto alle dichiarazioni periodiche delle quantità immesse sul mercato.",
+            "Prima di avviare la pratica verifichiamo che il rappresentante autorizzato sia regolarmente registrato presso Stiftung EAR, perché il tuo numero WEEE risulti valido anche per Amazon."
+        ]
     },
     {
         "id": 4,
         "activeClass": "",
-        "name": "SEO/Marketing",
-        "thumb": "service4.png",
-        "thumbFull1": "service-single4-1.jpg",
-        "thumbFull2": "service-single4-2.jpg",
-        "text": "Brand identity is the visual representation of a brand, including logos, colors, and messaging.",
-        "price": "4500",
-        "icon": "service-icon4.svg"
+        "name": "Brand Registry",
+        "thumb": "kodigit/service-4.svg",
+        "thumbFull1": "kodigit/service-4-a.svg",
+        "thumbFull2": "kodigit/service-4-b.svg",
+        "text": "Dalla registrazione del marchio all'iscrizione ad Amazon Brand Registry: proteggi il tuo brand, controlla i tuoi listing e sblocca contenuti A+, Brand Store e Sponsored Brands.",
+        "price": "Su preventivo",
+        "icon": "kodigit/icon-4.svg",
+        "features": [
+            "Deposito marchio EUIPO o UIBM",
+            "Iscrizione ad Amazon Brand Registry",
+            "Programma Transparency",
+            "Segnalazione contraffazioni e hijacker"
+        ],
+        "intro": "Il marchio è il tuo asset più prezioso su Amazon. Con Brand Registry hai il controllo dei tuoi listing e gli strumenti per difenderli da contraffazioni e venditori non autorizzati.",
+        "keyText1": "Se il marchio non è ancora depositato, coordiniamo la domanda presso EUIPO (valida in tutta l'UE) o UIBM con professionisti del settore. Brand Registry accetta anche marchi con domanda di registrazione in corso presso gli uffici ammessi.",
+        "keyText2": "Iscriviamo il brand ad Amazon Brand Registry, configuriamo gli utenti e i ruoli, attiviamo dove utile il programma Transparency e impostiamo il monitoraggio delle violazioni.",
+        "benefit": "Più controllo, più strumenti di vendita e più protezione: il tuo brand cresce su Amazon senza che altri si approprino dei tuoi listing.",
+        "paragraphs": [
+            "Con Brand Registry sblocchi contenuti A+ e Premium A+, il Brand Store, le campagne Sponsored Brands e Sponsored Display e le analisi del brand, strumenti che aumentano conversione e fedeltà dei clienti.",
+            "Monitoriamo i tuoi listing, segnaliamo modifiche non autorizzate, violazioni di marchio e contraffazioni e seguiamo le pratiche con Amazon fino alla risoluzione."
+        ]
+    },
+    {
+        "id": 5,
+        "activeClass": "",
+        "name": "Espansione Europea",
+        "thumb": "kodigit/service-5.svg",
+        "thumbFull1": "kodigit/service-5-a.svg",
+        "thumbFull2": "kodigit/service-5-b.svg",
+        "text": "Portiamo il tuo brand dal marketplace italiano a tutta Europa: apertura dei marketplace UE, listing tradotti e localizzati, logistica Pan-EU FBA e coordinamento con consulenti IVA.",
+        "price": "Su preventivo",
+        "icon": "kodigit/icon-5.svg",
+        "features": [
+            "Apertura marketplace Amazon UE",
+            "Traduzione e localizzazione listing",
+            "Logistica FBA e Pan-EU",
+            "IVA ed EPR con partner dedicati"
+        ],
+        "intro": "Germania, Francia, Spagna, Paesi Bassi, Polonia: ogni mercato ha lingua, regole e abitudini diverse. Ti aiutiamo ad aprirli con ordine, un passo alla volta.",
+        "keyText1": "Valutiamo con te i mercati più promettenti per il tuo prodotto, analizzando domanda, concorrenza e requisiti normativi. Poi pianifichiamo l'apertura, partendo spesso dalla Germania, il mercato Amazon più grande d'Europa.",
+        "keyText2": "Traduciamo e localizziamo i listing con parole chiave per ogni lingua, impostiamo la logistica FBA o Pan-EU e coordiniamo gli adempimenti IVA ed EPR di ciascun paese con partner specializzati.",
+        "benefit": "Un'espansione ordinata e conforme: più clienti in Europa senza sorprese su tasse, registrazioni o logistica.",
+        "paragraphs": [
+            "Lo stoccaggio in più paesi può far nascere obblighi IVA locali: per questo lavoriamo con consulenti fiscali specializzati e ti aiutiamo a scegliere il modello logistico più adatto.",
+            "Un unico referente Kodigit Retail coordina connettori, gestione store, compliance e marchio in tutti i mercati, così hai sempre una visione d'insieme."
+        ]
     }
 ]

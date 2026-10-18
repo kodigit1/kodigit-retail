@@ -16,20 +16,20 @@ const HeroV2 = ({ title }: DataType) => {
                         <Image className="hero-shape" src={contact} alt="Shape" />
                         <div className="hero-top">
                             <div className="hero-top-desc">
-                                <p>{`"At AIXOR, we hold that creativity sparks innovation. As a full-spectrum creative firm, we excel in converting ambitious ideas into engaging results."`}</p>
+                                <p>{`"Kodigit Retail aiuta i seller Amazon a vendere in Europa in modo semplice e conforme: connettori, gestione store, compliance EPR e protezione del marchio, con un unico referente."`}</p>
                             </div>
                             <div className="author-info">
-                                <h4>Ahshan M</h4>
-                                <span>Chief Executive Officer</span>
+                                <h4>Kodigit Retail</h4>
+                                <span>Servizi per Amazon Seller</span>
                             </div>
                         </div>
                         <div className="hero-bottom">
                             <div className="left">
-                                <h2>{title ? title : "Not found Page"}</h2>
-                                <h2>AIXOR</h2>
+                                <h2>{title ? title : "Pagina non trovata"}</h2>
+                                <h2>Kodigit Retail</h2>
                             </div>
                             <Link href="/contact" className="theme-btn">
-                                {`Let's Connect`}
+                                Parliamone
                                 <Image src={btnArrow} alt="icon" />
                             </Link>
                         </div>

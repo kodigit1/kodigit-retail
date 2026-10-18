@@ -26,10 +26,10 @@ const ServicesV2 = () => {
                     <div className="section-header">
                         <span className="section-subtitle">
                             <Image src={Union} alt="icon" />
-                            OUR VALUES
+                            I NOSTRI VALORI
                         </span>
                         <AnimatedText>
-                            We firmly believe in the transformation power of honesty and transparency. These values support our ability to create exceptional and meaningful work that sparks inspiration.
+                            Crediamo che vendere su Amazon debba essere semplice, trasparente e conforme alle regole. Questi principi guidano ogni progetto che seguiamo.
                         </AnimatedText>
                     </div>
                 </div>
@@ -38,11 +38,11 @@ const ServicesV2 = () => {
                         <div className="custom-container">
                             <div className="service-header-th">
                                 <Image src={arrowDown} alt="icon" />
-                                3D Illustration
+                                Illustrazione
                             </div>
                             <div className="service-header-th">
                                 <Image src={arrowDown} alt="icon" />
-                                Values
+                                Valori
                             </div>
                         </div>
                     </div>

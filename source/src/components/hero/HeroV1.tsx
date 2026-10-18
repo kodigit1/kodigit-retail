@@ -31,27 +31,27 @@ const HeroV1 = () => {
 
                             {/* Hero Description */}
                             <div className="hero-top-desc">
-                                <p>“ At AIXOR, we believe that creativity is the catalyst for innovation. As a full-service creative agency, we specialise in transforming bold ideas into compelling realities.</p>
-                                <p>Whether it’s developing a brand identity, creating a user-friendly website, or executing a dynamic marketing campaign, we approach every project with the same level of dedication and enthusiasm. “</p>
+                                <p>“ Kodigit Retail è il partner unico per chi vende su Amazon: colleghiamo il tuo eCommerce ai marketplace, gestiamo il tuo store e ci occupiamo delle registrazioni obbligatorie per vendere in Europa.</p>
+                                <p>WEEE e batterie in Germania, imballaggi su LUCID, Brand Registry, connettori e gestione di Seller Central: tu pensi al prodotto, al resto pensiamo noi. “</p>
                             </div>
 
                             {/* Author Information */}
                             <div className="author-info">
-                                <h4>Ahshan M</h4>
-                                <span>Chief Executive Officer</span>
+                                <h4>Kodigit Retail</h4>
+                                <span>Servizi per Amazon Seller</span>
                             </div>
                         </div>
 
                         {/* Hero Bottom Section */}
                         <div className="hero-bottom">
                             <div className="left">
-                                <h2>Imagination</h2>
-                                <h2>Meets Innovation</h2>
+                                <h2>Vendi su Amazon</h2>
+                                <h2>in tutta Europa</h2>
                             </div>
 
                             {/* Button Section */}
                             <Link href="/contact" className="theme-btn">
-                                {`Let's Connect`}
+                                Parliamone
                                 <Image src={btnArrowIcon} alt="icon" />
                             </Link>
                         </div>

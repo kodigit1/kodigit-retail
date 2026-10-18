@@ -5,7 +5,7 @@ import LayoutV3 from '@/components/layouts/LayoutV3';
 import PartnerV1 from '@/components/partner/PartnerV1';
 
 export const metadata = {
-    title: "Aixor - Faq"
+    title: "Kodigit Retail - Domande frequenti"
 };
 
 const FaqPage = () => {
@@ -13,7 +13,7 @@ const FaqPage = () => {
         <>
             <div className="aixor-main faq-page">
                 <LayoutV3>
-                    <HeroV2 title="Frequent Questions" />
+                    <HeroV2 title="Domande frequenti" />
                     <FaqV1 />
                     <ContactV1 />
                     <PartnerV1 />

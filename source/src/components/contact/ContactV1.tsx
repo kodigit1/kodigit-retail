@@ -10,7 +10,7 @@ const ContactV1 = () => {
     const handleForm = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         event.currentTarget.reset();
-        toast.success("Thanks For Your Message");
+        toast.success("Grazie, ti ricontatteremo a breve");
     }
 
     return (
@@ -19,28 +19,28 @@ const ContactV1 = () => {
                 <div className="custom-row">
                     <div className="left">
                         <div className="contact-content">
-                            <h3 data-aos="fade-up" data-aos-delay={200}>Let’s <span>Connect</span></h3>
+                            <h3 data-aos="fade-up" data-aos-delay={200}>Parliamo del <span>tuo store</span></h3>
                             <p>
-                                <span className="required">*</span> Whether you have a question, or want to discuss a potential project, our team at <br /> AIXOR is here to help. Please fill out the form below!!!
+                                <span className="required">*</span> Raccontaci cosa vendi e su quali marketplace: ti diciamo quali registrazioni servono, <br /> come collegare i tuoi sistemi e da dove partire. Compila il modulo qui sotto.
                             </p>
                             <form id="contact-form" className="contact-form" onSubmit={handleForm}>
                                 <div className="input-group">
-                                    <input type="text" name="name" placeholder="Name" autoComplete="off" required />
+                                    <input type="text" name="name" placeholder="Nome e azienda" autoComplete="off" required />
                                 </div>
                                 <div className="col-2">
                                     <div className="input-group">
                                         <input type="email" name="email" placeholder="E-mail" autoComplete="off" required />
                                     </div>
                                     <div className="input-group">
-                                        <input type="text" name="phone" autoComplete="off" placeholder="Phone" required />
+                                        <input type="text" name="phone" autoComplete="off" placeholder="Telefono" required />
                                     </div>
                                 </div>
                                 <div className="input-group">
-                                    <textarea name="message" id="message" placeholder="Message" autoComplete="off" required />
+                                    <textarea name="message" id="message" placeholder="Cosa vendi e su quali marketplace?" autoComplete="off" required />
                                 </div>
                                 <div className="input-group">
                                     <button type="submit" className="theme-btn">
-                                        Send Message
+                                        Invia richiesta
                                         <Image src={btnArrow} alt="icon" />
                                     </button>
                                 </div>

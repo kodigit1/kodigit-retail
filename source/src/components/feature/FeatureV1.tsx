@@ -12,14 +12,14 @@ const FeatureV1 = () => {
                     <div className="section-header section-header2">
                         <span className="section-subtitle">
                             <Image src={Union} alt="icon" />
-                            Our projects
+                            Scenari tipici
                         </span>
                         <h2 className="section-title section-title2">
-                            Featured WOW <span>Projects</span>
+                            Come aiutiamo <span>i seller</span>
                         </h2>
                         <p className="section-desc">
-                            Explore our collection of cutting-edge products designed to empower your business and elevate your creative potential. <br />
-                            Each product is meticulously crafted to provide exceptional performance, usability, and results.
+                            Ogni seller ha esigenze diverse. Ecco alcuni scenari tipici che seguiamo, dalla compliance in Germania <br />
+                            alla protezione del marchio, fino all'integrazione tra webshop e marketplace.
                         </p>
                     </div>
                     <div className="feature-project-lists">
@@ -28,8 +28,8 @@ const FeatureV1 = () => {
                         )}
                     </div>
                     <div className="feature-more-btn-wrap">
-                        <Link href="/projects" className="theme-btn">
-                            View More
+                        <Link href="/contact" className="theme-btn">
+                            Parla con noi
                         </Link>
                     </div>
                 </div>

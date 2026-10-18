@@ -11,14 +11,14 @@ const AboutV2 = () => {
                 <div className="custom-container">
                     <div className="section-header">
                         <span className="section-subtitle">
-                            <Image src={unionIcon} alt="About Us" /> About Us
+                            <Image src={unionIcon} alt="Chi siamo" /> Chi siamo
                         </span>
                         <div className="right">
                             <AnimatedText>
-                                Founded on the principles of creativity, collaboration, and excellence, AIXOR is a diverse team of industry experts dedicated to delivering outstanding results...
+                                Kodigit Retail riunisce in un solo team tecnologia, marketplace e compliance: accompagniamo i seller Amazon dal primo listing all'espansione in Europa, senza blocchi e senza sorprese...
                             </AnimatedText>
                             <AnimatedText>
-                                We are committed to pushing the boundaries of what’s possible, working together seamlessly to exceed expectations and deliver outstanding value to our clients.
+                                Ci ispiriamo ai migliori fornitori europei di EPR, connettori e gestione account, ma mettiamo tutto sotto lo stesso tetto: un solo interlocutore che conosce il tuo catalogo, i tuoi sistemi e i tuoi mercati.
                             </AnimatedText>
                         </div>
                     </div>

@@ -31,7 +31,8 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: "Aixor - Marketing Agency React NextJS Template"
+  title: "Kodigit Retail - Servizi per Amazon Seller",
+  description: "Connettori eCommerce, gestione store Amazon, registrazioni WEEE, batterie e imballaggi in Germania, Brand Registry ed espansione europea per i seller Amazon."
 };
 
 export default function RootLayout({
@@ -40,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <body className={`${arapey.className} ${urbanist.className}`}>
         <ToastContainer />
         <Dependency />

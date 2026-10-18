@@ -21,28 +21,26 @@ const SingleFeatureV1 = ({ feature }: { feature: DataType }) => {
     return (
         <div className="feature-project" ref={containerRef}>
             <div className="hover_mouse" ref={hoverElementRef}>
-                <Link href={`/project-details/${id}`}>View</Link>
+                <Link href="/contact">Scopri</Link>
             </div>
             <div className="img-box">
-                <Image src={`/assets/images/${thumb}`} alt="image" width={2544} height={1366} />
+                <Image src={`/assets/images/${thumb}`} alt={projectName ?? "Scenario"} width={2544} height={1366} />
             </div>
             <div className="feature-project-infos">
                 <div className="feature-project-info-box">
-                    <span className="title">Project Name:</span>
-                    <Link href={`/project-details/${id}`}>
-                        <span className="subtitle">{projectName}</span>
-                    </Link>
+                    <span className="title">Scenario:</span>
+                    <span className="subtitle">{projectName}</span>
                 </div>
                 <div className="feature-project-info-box">
-                    <span className="title">Description</span>
+                    <span className="title">Cosa facciamo:</span>
                     <span className="subtitle">{subTitle1}<br />{subTitle2}</span>
                 </div>
                 <div className="feature-project-info-box">
-                    <span className="title">Industry:</span>
+                    <span className="title">Settore:</span>
                     <span className="subtitle">{info}</span>
                 </div>
                 <div className="feature-project-info-box">
-                    <span className="title">Release Date:</span>
+                    <span className="title">Servizi:</span>
                     <span className="subtitle">{date}</span>
                 </div>
             </div>

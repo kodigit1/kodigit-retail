@@ -24,10 +24,10 @@ const AboutV1 = () => {
                 <div className="custom-container">
                     <div className="section-header">
                         <span className="section-subtitle">
-                            <Image src={unionIcon} alt="About Us" /> About Us
+                            <Image src={unionIcon} alt="Chi siamo" /> Chi siamo
                         </span>
                         <AnimatedText>
-                            Founded on the principles of creativity, collaboration, and excellence, AIXOR is a diverse team of industry experts dedicated to delivering outstanding results...
+                            Kodigit Retail riunisce in un solo team tecnologia, marketplace e compliance: accompagniamo i seller Amazon dal primo listing all'espansione in Europa, senza blocchi e senza sorprese...
                         </AnimatedText>
                     </div>
                     <div className="funfacts-wrap">

@@ -20,13 +20,13 @@ const HeaderMenu = () => {
                                     <Link href="/">Home <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/projects">Projects <span>(7)</span></Link>
+                                    <Link href="/service-details/1">Servizi <span>(5)</span></Link>
                                 </li>
                                 <li>
-                                    <Link href="/about">About Us <span /></Link>
+                                    <Link href="/about">Chi siamo <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">Contact <span /></Link>
+                                    <Link href="/contact">Contatti <span /></Link>
                                 </li>
                                 <li className="dropdown-menu-item">
                                     <Link href="#">All Pages <i className="las la-angle-down" /></Link>

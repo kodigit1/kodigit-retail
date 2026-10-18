@@ -3,6 +3,44 @@ import pricingShape1 from "@/assets/images/pricing-shape1.png"
 import pricingShape2 from "@/assets/images/pricing-shape2.png"
 import Image from "next/image";
 
+const FaqData = [
+    {
+        number: "I.",
+        question: "Quali servizi offrite ai seller Amazon?",
+        answer: "Connettori tra il tuo eCommerce o ERP e i marketplace, gestione completa dello store su Seller e Vendor Central, registrazioni EPR in Germania (WEEE, batterie e imballaggi), deposito del marchio e iscrizione ad Amazon Brand Registry, ed espansione sui marketplace Amazon europei."
+    },
+    {
+        number: "II.",
+        question: "Perché mi serve un numero WEEE per vendere su Amazon.de?",
+        answer: "In Germania chi immette sul mercato apparecchi elettrici o elettronici deve registrarsi presso Stiftung EAR. Amazon richiede il numero di registrazione WEEE per i prodotti interessati e, senza un numero valido, può bloccare le offerte. Se non hai una sede in Germania serve un rappresentante autorizzato registrato presso EAR."
+    },
+    {
+        number: "III.",
+        question: "Il mio prodotto contiene una batteria: cosa devo fare?",
+        answer: "Le batterie, anche quando sono integrate in un apparecchio, hanno un obbligo di registrazione separato. Un prodotto elettrico con batteria richiede quindi sia la registrazione WEEE sia quella batterie presso Stiftung EAR. Ci occupiamo di entrambe e delle dichiarazioni periodiche."
+    },
+    {
+        number: "IV.",
+        question: "E per gli imballaggi?",
+        answer: "Chi spedisce prodotti imballati a consumatori in Germania deve registrarsi nel registro LUCID e aderire a un sistema duale per gli imballaggi di vendita e di spedizione. Amazon verifica il numero LUCID: ti aiutiamo con la registrazione, la scelta del sistema e le comunicazioni delle quantità."
+    },
+    {
+        number: "V.",
+        question: "Posso iscrivermi ad Amazon Brand Registry senza marchio registrato?",
+        answer: "Serve un marchio registrato oppure una domanda di registrazione depositata presso un ufficio ammesso da Amazon, come EUIPO o UIBM. Se non hai ancora un marchio, coordiniamo il deposito con professionisti del settore e poi completiamo l'iscrizione al Brand Registry."
+    },
+    {
+        number: "VI.",
+        question: "Quali piattaforme eCommerce potete collegare ad Amazon?",
+        answer: "Lavoriamo con le piattaforme più diffuse, come Shopify, WooCommerce, PrestaShop e Magento, oltre a ERP e PIM. Valutiamo il tuo stack e scegliamo il connettore più adatto per sincronizzare catalogo, stock, prezzi e ordini su Amazon e sugli altri marketplace europei."
+    },
+    {
+        number: "VII.",
+        question: "Vi occupate anche dell'IVA nei paesi europei?",
+        answer: "Gli adempimenti IVA richiedono un consulente fiscale abilitato: per questo lavoriamo con partner specializzati e coordiniamo noi il flusso di informazioni, così IVA, EPR e logistica Pan-EU restano allineati."
+    }
+];
+
 const FaqV1 = () => {
     return (
         <>
@@ -13,10 +51,10 @@ const FaqV1 = () => {
                         Faq
                     </span>
                     <h2 className="section-title section-title2">
-                        Frequent Queries, <span>Quick Fixes</span>
+                        Domande frequenti, <span>risposte chiare</span>
                     </h2>
-                    <p className="section-desc">Whether you have specific questions or need general information, our FAQ section
-                        is here to help. From details about our services to guidance on choosing the right plan</p>
+                    <p className="section-desc">Le domande che ci fanno più spesso i seller Amazon su registrazioni EPR in Germania,
+                        Brand Registry, connettori e gestione dello store.</p>
                 </div>
 
                 {/* Faq lists */}
@@ -28,103 +66,20 @@ const FaqV1 = () => {
                         <Image src={pricingShape2} alt="shape" />
                     </div>
 
-                    {/* Faq 1 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <span className="number">I.</span> What types of creative services do you offer? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
+                    {FaqData.map((faq, index) =>
+                        <div className="accordion-item faq-item" key={faq.number}>
+                            <h2 className="accordion-header" id={`heading${index}`}>
+                                <button className={`accordion-button${index === 0 ? "" : " collapsed"}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded={index === 0} aria-controls={`collapse${index}`}>
+                                    <span className="number">{faq.number}</span> {faq.question} <span className="plus-icon"><span /><span /></span>
+                                </button>
+                            </h2>
+                            <div id={`collapse${index}`} className={`accordion-collapse collapse${index === 0 ? " show" : ""}`} aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <p>{faq.answer}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Faq 2 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingTwo">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span className="number">II.</span> What is your typical project timeline? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Faq 3 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingThree">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <span className="number">III.</span> Do you offer post-launch support or maintenance? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Faq 4 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingFour">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <span className="number">IV.</span> Can you assist with both online and offline creative projects? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Faq 5 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingFive">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <span className="number">V.</span> Do your designs are tailored to each client? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Faq 6 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingSix">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <span className="number">VI.</span> How do I upgrade, downgrade, or cancel? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Faq 7 */}
-                    <div className="accordion-item faq-item">
-                        <h2 className="accordion-header" id="headingSeven">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                <span className="number">VII.</span> Can I see examples of your previous work? <span className="plus-icon"><span /><span /></span>
-                            </button>
-                        </h2>
-                        <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <p>Our agency specializes in a range of creative services including branding, graphic design, web design, digital marketing, social media management, and content creation.</p>
-                            </div>
-                        </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </>

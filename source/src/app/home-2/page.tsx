@@ -7,11 +7,9 @@ import LayoutV2 from "@/components/layouts/LayoutV2";
 import PartnerV1 from "@/components/partner/PartnerV1";
 import PriceV1 from "@/components/pricing/PriceV1";
 import ServicesV1 from "@/components/services/ServicesV1";
-import TeamV1 from "@/components/team/TeamV1";
-import TestimonialV1 from "@/components/testimonial/TestimonialV1";
 
 export const metadata = {
-    title: "Aixor - Home 2 Page"
+    title: "Kodigit Retail - Home"
 };
 
 const Home2Page = () => {
@@ -24,9 +22,7 @@ const Home2Page = () => {
                     <ServicesV1 />
                     <FeatureV1 />
                     <AwardsV1 />
-                    <TeamV1 />
                     <PriceV1 />
-                    <TestimonialV1 />
                     <ContactV1 />
                     <PartnerV1 />
                 </LayoutV2>

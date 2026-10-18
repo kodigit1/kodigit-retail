@@ -5,14 +5,14 @@ import LayoutV3 from "@/components/layouts/LayoutV3";
 import PartnerV1 from "@/components/partner/PartnerV1";
 
 export const metadata = {
-    title: "Aixor - Contact"
+    title: "Kodigit Retail - Contatti"
 };
 
 const ContactPage = () => {
     return (
         <>
             <LayoutV3>
-                <HeroV2 title="Contact Us" />
+                <HeroV2 title="Contattaci" />
                 <ContactV2 />
                 <FaqV1 />
                 <PartnerV1 />

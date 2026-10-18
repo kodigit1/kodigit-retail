@@ -26,10 +26,10 @@ const ServicesV1 = () => {
                     <div className="section-header">
                         <span className="section-subtitle">
                             <Image src={Union} alt="icon" />
-                            Our Service
+                            I nostri servizi
                         </span>
                         <AnimatedText>
-                            {`At AIXOR, we offer tailored creative solutions to elevate your brand and drive success, exceeding your expectations with our expert team's dedicated services.`}
+                            {`Tutto ciò che serve a un seller Amazon per vendere in Europa: integrazioni, gestione dello store, registrazioni EPR, protezione del marchio ed espansione nei marketplace UE.`}
                         </AnimatedText>
                     </div>
                 </div>
@@ -38,15 +38,15 @@ const ServicesV1 = () => {
                         <div className="custom-container">
                             <div className="service-header-th">
                                 <Image src={arrowDown} alt="icon" />
-                                Service
+                                Servizio
                             </div>
                             <div className="service-header-th">
                                 <Image src={arrowDown} alt="icon" />
-                                Features
+                                Cosa include
                             </div>
                             <div className="service-header-th">
                                 <Image src={arrowDown} alt="icon" />
-                                3D Illustration
+                                Illustrazione
                             </div>
                         </div>
                     </div>
