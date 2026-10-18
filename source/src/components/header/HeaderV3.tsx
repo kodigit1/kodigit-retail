@@ -61,12 +61,12 @@ const HeaderV3 = () => {
                     <div className="header-sidebar-top">
                         <ul>
                             <li>
-                                <span>Based in Hanoi,</span>
-                                <a href="mailto:email@example.com">E: MindBlowingArt2692@gmail.com</a>
+                                <span>Kodigit KFT</span>
+                                <a href="https://maps.google.com/?q=Honved+utca+8,+1054+Budapest" target="_blank" rel="noopener noreferrer">Honved utca 8.1.</a>
                             </li>
                             <li>
-                                <span>VietNam</span>
-                                <a href="tel:+1234567890">(+84) 0123456789</a>
+                                <span>1054 Budapest</span>
+                                <a href="tel:+36705879526">+36 70 587 9526</a>
                             </li>
                         </ul>
                     </div>
@@ -131,12 +131,12 @@ const HeaderV3 = () => {
                     <div className="header-sidebar-top">
                         <ul>
                             <li>
-                                <span>Based in Hanoi,</span>
-                                <a href="mailto:email@example.com">E: MindBlowingArt2692@gmail.com</a>
+                                <span>Kodigit KFT</span>
+                                <a href="https://maps.google.com/?q=Honved+utca+8,+1054+Budapest" target="_blank" rel="noopener noreferrer">Honved utca 8.1.</a>
                             </li>
                             <li>
-                                <span>VietNam</span>
-                                <a href="tel:+1234567890">(+84) 0123456789</a>
+                                <span>1054 Budapest</span>
+                                <a href="tel:+36705879526">+36 70 587 9526</a>
                             </li>
                         </ul>
                     </div>
@@ -220,8 +220,8 @@ const HeaderV3 = () => {
 
                         {/* Header right info */}
                         <div className="header-right-info">
-                            <a className="with-border" href="tel:+1234567890">(+84) 0123456789</a>
-                            <a href="mailto:example@gmail.com">
+                            <a className="with-border" href="tel:+36705879526">+36 70 587 9526</a>
+                            <a href="/contact" aria-label="Contattaci">
                                 <i className="iconoir-mail-out" />
                             </a>
                         </div>

@@ -41,7 +41,7 @@ const FooterV1 = () => {
                                     </ul>
                                 </div>
                                 <div className="copyright">
-                                    &copy; {(new Date().getFullYear())} ALL RIGHTS RESERVED
+                                    &copy; {(new Date().getFullYear())} KODIGIT KFT · P.IVA HU25461048
                                 </div>
                             </div>
                         </div>
@@ -51,18 +51,18 @@ const FooterV1 = () => {
                             <div className="footer-widget footer-link">
                                 <div className="footer-contact-infos">
                                     <div className="footer-widget-top">
-                                        <h4>REACH OUT TO US</h4>
+                                        <h4>CONTATTI</h4>
                                         <div className="links">
                                             <div className="split-text-anim">
-                                                <a data-aos="slide-up" data-aos-duration={700} href="tel:+840123456789" className="with-border">(+84) 0123456789</a>
+                                                <a data-aos="slide-up" data-aos-duration={700} href="tel:+36705879526" className="with-border">+36 70 587 9526</a>
                                             </div>
                                             <div className="split-text-anim">
-                                                <a data-aos="slide-up" data-aos-duration={700} href="mailto:MindBlowingArt2692@gmail.com" className="with-border">MindBlowingArt2692@gmail.com</a>
+                                                <a data-aos="slide-up" data-aos-duration={700} href="https://maps.google.com/?q=Honved+utca+8,+1054+Budapest" target="_blank" rel="noopener noreferrer" className="with-border">Honved utca 8.1., 1054 Budapest</a>
                                             </div>
                                         </div>
                                     </div>
                                     <Link href="/contact" className="theme-btn">
-                                        {`Let's Connect`}
+                                        Parliamone
                                         <Image src={btnArrow} alt="icon" />
                                     </Link>
                                 </div>
@@ -98,7 +98,7 @@ const FooterV1 = () => {
                                     </ul>
                                 </div>
                                 <div className="copyright">
-                                    BASED IN HANOI, VIETNAM
+                                    BUDAPEST, UNGHERIA
                                 </div>
                             </div>
                         </div>

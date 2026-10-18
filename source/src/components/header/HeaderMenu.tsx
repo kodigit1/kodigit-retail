@@ -50,8 +50,8 @@ const HeaderMenu = () => {
 
                         {/* Header right info */}
                         <div className="header-right-info">
-                            <a className="with-border" href="tel:+1234567890">(+84) 0123456789</a>
-                            <a href="mailto:example@gmail.com">
+                            <a className="with-border" href="tel:+36705879526">+36 70 587 9526</a>
+                            <a href="/contact" aria-label="Contattaci">
                                 <i className="iconoir-mail-out" />
                             </a>
                         </div>
