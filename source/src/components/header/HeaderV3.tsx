@@ -67,6 +67,10 @@ const HeaderV3 = () => {
                                 <span>1054 Budapest</span>
                                 <a href="tel:+36705879526">+36 70 587 9526</a>
                             </li>
+                            <li>
+                                <span>Email</span>
+                                <a href="mailto:info@kodigit.agency">info@kodigit.agency</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -131,6 +135,10 @@ const HeaderV3 = () => {
                             <li>
                                 <span>1054 Budapest</span>
                                 <a href="tel:+36705879526">+36 70 587 9526</a>
+                            </li>
+                            <li>
+                                <span>Email</span>
+                                <a href="mailto:info@kodigit.agency">info@kodigit.agency</a>
                             </li>
                         </ul>
                     </div>
@@ -210,7 +218,7 @@ const HeaderV3 = () => {
                         {/* Header right info */}
                         <div className="header-right-info">
                             <a className="with-border" href="tel:+36705879526">+36 70 587 9526</a>
-                            <a href="/contact" aria-label="Contattaci">
+                            <a href="mailto:info@kodigit.agency" aria-label="Scrivi a info@kodigit.agency">
                                 <i className="iconoir-mail-out" />
                             </a>
                         </div>

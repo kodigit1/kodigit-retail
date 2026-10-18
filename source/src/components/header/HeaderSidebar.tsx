@@ -64,6 +64,10 @@ const HeaderSidebar = () => {
                                 <span>1054 Budapest</span>
                                 <a href="tel:+36705879526">+36 70 587 9526</a>
                             </li>
+                            <li>
+                                <span>Email</span>
+                                <a href="mailto:info@kodigit.agency">info@kodigit.agency</a>
+                            </li>
                         </ul>
                     </div>
 

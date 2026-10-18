@@ -57,6 +57,9 @@ const FooterV1 = () => {
                                                 <a data-aos="slide-up" data-aos-duration={700} href="tel:+36705879526" className="with-border">+36 70 587 9526</a>
                                             </div>
                                             <div className="split-text-anim">
+                                                <a data-aos="slide-up" data-aos-duration={700} href="mailto:info@kodigit.agency" className="with-border">info@kodigit.agency</a>
+                                            </div>
+                                            <div className="split-text-anim">
                                                 <a data-aos="slide-up" data-aos-duration={700} href="https://maps.google.com/?q=Honved+utca+8,+1054+Budapest" target="_blank" rel="noopener noreferrer" className="with-border">Honved utca 8.1., 1054 Budapest</a>
                                             </div>
                                         </div>
