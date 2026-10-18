@@ -767,6 +767,41 @@ a {
     -webkit-transition: .3s;
 }
 
+/* Header hamburger (tablet / mobile) */
+.header-hamburg {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: #1a1a1a;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.header-hamburg:hover {
+    background: #ffffff;
+}
+
+.header-hamburg span {
+    display: block;
+    width: 18px;
+    height: 1px;
+    background: #ffffff;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.header-hamburg:hover span {
+    background: #000000;
+}
+
 /* ===== # Hero ===== */
 .hero-sec .hero-inner {
     height: calc(100vh + 36px);

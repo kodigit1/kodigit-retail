@@ -256,6 +256,18 @@
 }
 
 @media (max-width: 1024px) {
+    .header-menu-wrap .navbar {
+        display: none;
+    }
+
+    .header-menu-wrap .header-right-info {
+        gap: 32px;
+    }
+
+    .header-hamburg {
+        display: flex;
+    }
+
     .home-v2 .scroll-to-show-menu {
         display: block;
     }

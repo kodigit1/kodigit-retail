@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import logo1 from "@/assets/images/kodigit/logo.png"
 import Image from 'next/image';
+import MobileMenu from './MobileMenu';
 
 const HeaderV2 = () => {
     return (
@@ -54,6 +55,7 @@ const HeaderV2 = () => {
                             <a href="mailto:info@kodigit.agency" aria-label="Scrivi a info@kodigit.agency">
                                 <i className="iconoir-mail-out" />
                             </a>
+                            <MobileMenu />
                         </div>
                     </div>
                 </div>

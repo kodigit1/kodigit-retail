@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import logo1 from "@/assets/images/kodigit/logo.png";
 import useNotchScrollLink from "@/hooks/useNotchScrollLink";
+import MobileMenu from "./MobileMenu";
 
 const HeaderV3 = () => {
 
@@ -221,6 +222,7 @@ const HeaderV3 = () => {
                             <a href="mailto:info@kodigit.agency" aria-label="Scrivi a info@kodigit.agency">
                                 <i className="iconoir-mail-out" />
                             </a>
+                            <MobileMenu />
                         </div>
                     </div>
                 </div>
