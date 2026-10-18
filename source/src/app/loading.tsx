@@ -1,4 +1,4 @@
-import aixorBigLogo from "@/assets/images/aixor-big-logo.svg"
+import aixorBigLogo from "@/assets/images/kodigit/logo-big.png"
 import Image from "next/image";
 
 const Preloader = () => {
@@ -8,7 +8,7 @@ const Preloader = () => {
                 <video loop muted autoPlay>
                     <source src="/assets/video/hero-video.mp4" type="video/mp4" />
                 </video>
-                <Image src={aixorBigLogo} alt="Logo" />
+                <Image src={aixorBigLogo} alt="Kodigit Retail" />
             </div>
         </>
     );

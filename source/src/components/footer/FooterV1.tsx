@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import btnArrow from "@/assets/images/btn-arrow.svg"
-import footerBigLogo from "@/assets/images/footer-big-logo.png"
+import footerBigLogo from "@/assets/images/kodigit/logo-big.png"
 import Image from "next/image";
 import Link from "next/link";
 
@@ -73,7 +73,7 @@ const FooterV1 = () => {
                 </div>
                 <div className="footer-bottom">
                     <div className="split-text-anim">
-                        <Image data-aos="slide-up" data-aos-duration={700} src={footerBigLogo} alt="logo" />
+                        <Image data-aos="slide-up" data-aos-duration={700} src={footerBigLogo} alt="Kodigit" />
                     </div>
                 </div>
             </footer>

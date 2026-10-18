@@ -342,7 +342,8 @@ a {
 }
 
 .header-menu-wrap .logo img {
-    max-width: 81px;
+    max-width: 150px;
+    height: auto;
     display: block;
 }
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import logo1 from "@/assets/images/logo-1.png"
+import logo1 from "@/assets/images/kodigit/logo.png"
 import Image from 'next/image';
 
 const HeaderV2 = () => {
@@ -10,7 +10,7 @@ const HeaderV2 = () => {
                     <div className="custom-row">
 
                         <Link href="/" className="logo">
-                            <Image src={logo1} alt="logo" />
+                            <Image src={logo1} alt="Kodigit Retail" />
                         </Link>
 
                         {/* Navigation menu */}
@@ -20,13 +20,13 @@ const HeaderV2 = () => {
                                     <Link href="/">Home <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/projects">Projects <span>(7)</span></Link>
+                                    <Link href="/service-details/1">Servizi <span>(5)</span></Link>
                                 </li>
                                 <li>
-                                    <Link href="/about">About Us <span /></Link>
+                                    <Link href="/about">Chi siamo <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">Contact <span /></Link>
+                                    <Link href="/contact">Contatti <span /></Link>
                                 </li>
                                 <li className="dropdown-menu-item">
                                     <Link href="#">All Pages <i className="las la-angle-down" /></Link>

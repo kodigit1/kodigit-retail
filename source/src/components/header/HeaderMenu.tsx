@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import logo1 from "@/assets/images/logo-1.png"
+import logo1 from "@/assets/images/kodigit/logo.png"
 import Image from 'next/image';
 
 const HeaderMenu = () => {
@@ -10,7 +10,7 @@ const HeaderMenu = () => {
                     <div className="custom-row">
 
                         <Link href="/" className="logo">
-                            <Image src={logo1} alt="logo" />
+                            <Image src={logo1} alt="Kodigit Retail" />
                         </Link>
 
                         {/* Navigation menu */}

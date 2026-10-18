@@ -3,7 +3,7 @@ import sidebarbg from "@/assets/images/sidebarbg.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import logo1 from "@/assets/images/logo-1.png";
+import logo1 from "@/assets/images/kodigit/logo.png";
 import useNotchScrollLink from "@/hooks/useNotchScrollLink";
 
 const HeaderV3 = () => {
@@ -170,7 +170,7 @@ const HeaderV3 = () => {
                     <div className="custom-row">
 
                         <Link href="/" className="logo">
-                            <Image src={logo1} alt="logo" />
+                            <Image src={logo1} alt="Kodigit Retail" />
                         </Link>
 
                         {/* Navigation menu */}
@@ -180,13 +180,13 @@ const HeaderV3 = () => {
                                     <Link href="/">Home <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/projects">Projects <span>(7)</span></Link>
+                                    <Link href="/service-details/1">Servizi <span>(5)</span></Link>
                                 </li>
                                 <li>
-                                    <Link href="/about">About Us <span /></Link>
+                                    <Link href="/about">Chi siamo <span /></Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">Contact <span /></Link>
+                                    <Link href="/contact">Contatti <span /></Link>
                                 </li>
                                 <li className="dropdown-menu-item">
                                     <Link href="#">All Pages <i className="las la-angle-down" /></Link>
