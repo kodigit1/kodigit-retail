@@ -33,7 +33,7 @@ const SingleFeatureV1 = ({ feature }: { feature: DataType }) => {
                 </div>
                 <div className="feature-project-info-box">
                     <span className="title">Cosa facciamo:</span>
-                    <span className="subtitle">{subTitle1}<br />{subTitle2}</span>
+                    <span className="subtitle">{subTitle1} <br />{subTitle2}</span>
                 </div>
                 <div className="feature-project-info-box">
                     <span className="title">Settore:</span>
