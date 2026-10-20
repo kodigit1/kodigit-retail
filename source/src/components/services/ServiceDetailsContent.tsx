@@ -4,14 +4,13 @@ import Union from '@/assets/images/Union.svg';
 import AnimatedText from "../animated/AnimatedText";
 import Link from "next/link";
 import btnArrow from '@/assets/images/btn-arrow.svg';
-import useScaleDownAnimation from "@/hooks/useScaleDownAnimation";
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI"];
 
 interface DataType {
     name?: string;
     thumbFull1?: string;
-    thumbFull2?: string;
+    steps?: string[];
     text?: string;
     price?: string;
     features?: string[];
@@ -23,10 +22,7 @@ interface DataType {
 }
 
 const ServiceDetailsContent = ({ serviceData }: { serviceData: DataType }) => {
-    const { name, text, price, thumbFull1, thumbFull2, features = [], intro, keyText1, keyText2, benefit, paragraphs = [] } = serviceData
-
-    const containerRef = useScaleDownAnimation('.scaleDown');
-
+    const { name, text, price, thumbFull1, steps = [], features = [], intro, keyText1, keyText2, benefit, paragraphs = [] } = serviceData
 
     return (
         <>
@@ -88,8 +84,17 @@ const ServiceDetailsContent = ({ serviceData }: { serviceData: DataType }) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="full-image" ref={containerRef}>
-                            <Image className="scaleDown" src={`/assets/images/${thumbFull2}`} alt={`${name} - come lavoriamo`} width={1900} height={925} />
+                        <div className="service-steps">
+                            <h3 className="service-steps-title">{name} · come lavoriamo</h3>
+                            <ol className="service-steps-list">
+                                {steps.map((step, index) =>
+                                    <li key={step} className="service-step">
+                                        <span className="number">{index + 1}</span>
+                                        <span className="title">{step}</span>
+                                    </li>
+                                )}
+                            </ol>
+                            <p className="service-steps-footer">Un unico referente per ogni fase</p>
                         </div>
                         <div className="section-header">
                             <span className="section-subtitle">

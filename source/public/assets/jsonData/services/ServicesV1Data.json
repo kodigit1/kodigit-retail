@@ -5,7 +5,12 @@
         "name": "Connettori eCommerce",
         "thumb": "kodigit/service-1.svg",
         "thumbFull1": "kodigit/service-1-a.svg",
-        "thumbFull2": "kodigit/service-1-b.svg",
+        "steps": [
+            "Mappatura catalogo",
+            "Sync stock e prezzi",
+            "Ordini e resi centralizzati",
+            "Monitoraggio errori feed"
+        ],
         "text": "Colleghiamo il tuo sito eCommerce, ERP o PIM ad Amazon e ai principali marketplace europei: un solo catalogo, stock e prezzi sempre allineati, ordini gestiti da un unico punto.",
         "price": "Su preventivo",
         "icon": "kodigit/icon-1.svg",
@@ -30,7 +35,12 @@
         "name": "Gestione Store Amazon",
         "thumb": "kodigit/service-2.svg",
         "thumbFull1": "kodigit/service-2-a.svg",
-        "thumbFull2": "kodigit/service-2-b.svg",
+        "steps": [
+            "Audit dell'account",
+            "Listing e contenuti A+",
+            "Campagne PPC",
+            "Report mensili"
+        ],
         "text": "Gestiamo il tuo account Seller o Vendor Central dall'apertura alla crescita: audit, listing ottimizzati, contenuti A+, campagne pubblicitarie e salute dell'account.",
         "price": "Su preventivo",
         "icon": "kodigit/icon-2.svg",
@@ -55,7 +65,12 @@
         "name": "Compliance EPR Germania",
         "thumb": "kodigit/service-3.svg",
         "thumbFull1": "kodigit/service-3-a.svg",
-        "thumbFull2": "kodigit/service-3-b.svg",
+        "steps": [
+            "Registrazione Stiftung EAR",
+            "Batterie (BattDG)",
+            "LUCID e sistema duale",
+            "Dichiarazioni periodiche"
+        ],
         "text": "Ti accompagniamo nelle registrazioni obbligatorie per vendere su Amazon.de: WEEE presso Stiftung EAR, batterie, imballaggi su LUCID, con rappresentante autorizzato in Germania.",
         "price": "Su preventivo",
         "icon": "kodigit/icon-3.svg",
@@ -80,7 +95,12 @@
         "name": "Brand Registry",
         "thumb": "kodigit/service-4.svg",
         "thumbFull1": "kodigit/service-4-a.svg",
-        "thumbFull2": "kodigit/service-4-b.svg",
+        "steps": [
+            "Deposito marchio EUIPO / UIBM",
+            "Iscrizione Brand Registry",
+            "Programma Transparency",
+            "Tutela da hijacker"
+        ],
         "text": "Dalla registrazione del marchio all'iscrizione ad Amazon Brand Registry: proteggi il tuo brand, controlla i tuoi listing e sblocca contenuti A+, Brand Store e Sponsored Brands.",
         "price": "Su preventivo",
         "icon": "kodigit/icon-4.svg",
@@ -105,7 +125,12 @@
         "name": "Espansione Europea",
         "thumb": "kodigit/service-5.svg",
         "thumbFull1": "kodigit/service-5-a.svg",
-        "thumbFull2": "kodigit/service-5-b.svg",
+        "steps": [
+            "Apertura marketplace UE",
+            "Traduzione listing",
+            "Pan-EU FBA",
+            "Partner IVA dedicati"
+        ],
         "text": "Portiamo il tuo brand dal marketplace italiano a tutta Europa: apertura dei marketplace UE, listing tradotti e localizzati, logistica Pan-EU FBA e coordinamento con consulenti IVA.",
         "price": "Su preventivo",
         "icon": "kodigit/icon-5.svg",
