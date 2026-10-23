@@ -1,22 +1,48 @@
 "use client";
 import btnArrow from "@/assets/images/btn-arrow.svg";
 import Image from "next/image";
-import { useState } from "react";
 import { toast } from "react-toastify";
+
+const companyTypes = [
+    { id: "brand", label: "Brand / Produttore" },
+    { id: "reseller", label: "Rivenditore / Distributore" },
+    { id: "ecommerce", label: "eCommerce" },
+    { id: "vendor", label: "Vendor Amazon" },
+    { id: "other", label: "Altro" }
+];
+
+const services = [
+    { id: "connectors", label: "Connettori eCommerce" },
+    { id: "store-management", label: "Gestione Store Amazon" },
+    { id: "epr-compliance", label: "Compliance EPR Germania" },
+    { id: "brand-registry", label: "Brand Registry" },
+    { id: "eu-expansion", label: "Espansione Europea" },
+    { id: "other-service", label: "Altro" }
+];
+
+const marketplaces = [
+    { id: "amazon-it", label: "Amazon.it" },
+    { id: "amazon-de", label: "Amazon.de" },
+    { id: "amazon-fr", label: "Amazon.fr" },
+    { id: "amazon-es", label: "Amazon.es" },
+    { id: "amazon-nl", label: "Amazon.nl" },
+    { id: "other-marketplace", label: "Altri marketplace" }
+];
+
+const revenueRanges = [
+    { id: "revenue-none", label: "Non vendo ancora" },
+    { id: "revenue-low", label: "Fino a 10.000 €" },
+    { id: "revenue-mid", label: "10.000 – 50.000 €" },
+    { id: "revenue-high", label: "Oltre 50.000 €" }
+];
 
 const ContactV2 = () => {
 
     const handleForm = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         event.currentTarget.reset();
-        toast.success("Thanks For Your Message");
+        toast.success("Grazie, ti ricontatteremo a breve");
     }
-
-    const [budgetValue, setBudgetValue] = useState(300);
-
-    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setBudgetValue(Number(event.target.value));
-    };
 
     return (
         <>
@@ -28,103 +54,88 @@ const ContactV2 = () => {
                         <input type="hidden" name="subject" />
                         <div className="col-2">
                             <div className="input-group">
-                                <label htmlFor="first_name">First Name:</label>
-                                <input type="text" name="first_name" id="first_name" placeholder="John" autoComplete="off" required />
+                                <label htmlFor="first_name">Nome:</label>
+                                <input type="text" name="first_name" id="first_name" placeholder="Mario" autoComplete="off" required />
                             </div>
                             <div className="input-group">
-                                <label htmlFor="last_name">Last Name:</label>
-                                <input type="text" name="last_name" id="last_name" placeholder="Carter" autoComplete="off" required />
+                                <label htmlFor="last_name">Cognome:</label>
+                                <input type="text" name="last_name" id="last_name" placeholder="Rossi" autoComplete="off" required />
+                            </div>
+                        </div>
+                        <div className="col-2">
+                            <div className="input-group">
+                                <label htmlFor="company">Azienda:</label>
+                                <input type="text" name="company" id="company" placeholder="Rossi S.r.l." autoComplete="off" required />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="phone">Telefono:</label>
+                                <input type="tel" name="phone" id="phone" placeholder="+39 333 123 4567" autoComplete="off" />
                             </div>
                         </div>
                         <div className="input-group">
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Johncarter@gmail.com" autoComplete="off" required />
+                            <label htmlFor="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="mario.rossi@azienda.it" autoComplete="off" required />
                         </div>
                         <div className="input-group">
-                            <label htmlFor="saas">What’s the the type of your company:</label>
+                            <label htmlFor="brand">Che tipo di azienda sei?</label>
                             <div className="radio-btns">
-                                <div className="radio-btn">
-                                    <input type="radio" id="saas" name="company_type" defaultValue="SAAS" defaultChecked />
-                                    <label htmlFor="saas">SAAS</label>
-                                </div>
-                                <div className="radio-btn">
-                                    <input type="radio" id="agency" name="company_type" defaultValue="Agency" />
-                                    <label htmlFor="agency">Agency</label>
-                                </div>
-                                <div className="radio-btn">
-                                    <input type="radio" id="banking" name="company_type" defaultValue="Banking" />
-                                    <label htmlFor="banking">Banking</label>
-                                </div>
-                                <div className="radio-btn">
-                                    <input type="radio" id="business" name="company_type" defaultValue="Business" />
-                                    <label htmlFor="business">Business</label>
-                                </div>
-                                <div className="radio-btn">
-                                    <input type="radio" id="other" name="company_type" defaultValue="Other" />
-                                    <label htmlFor="other">Other</label>
-                                </div>
+                                {companyTypes.map((type, index) => (
+                                    <div className="radio-btn" key={type.id}>
+                                        <input type="radio" id={type.id} name="company_type" defaultValue={type.label} defaultChecked={index === 0} />
+                                        <label htmlFor={type.id}>{type.label}</label>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                         <div className="input-group">
-                            <label htmlFor="app_design">What you need from us?</label>
+                            <label htmlFor="connectors">Di cosa hai bisogno?</label>
                             <div className="checkbox-btns">
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="app_design" defaultValue="App Design" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">App Design</span>
-                                </div>
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="web_design" defaultValue="Web Design" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">Web Design</span>
-                                </div>
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="branding" defaultValue="Branding" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">Branding</span>
-                                </div>
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="development" defaultValue="Development" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">Development</span>
-                                </div>
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="cloud-service" defaultValue="Cloud Services" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">Cloud Service</span>
-                                </div>
-                                <div className="checkbox-btn">
-                                    <input type="checkbox" name="service_type" id="other-service" defaultValue="Other" />
-                                    <span className="checkbox-marker"><i className="las la-check" /></span>
-                                    <span className="checkbox-label">Other</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="input-group">
-                            <label htmlFor="pi_input">Budget:</label>
-                            <div className="input-group-budget">
-                                <input id="pi_input" type="range" name="budget" min={100} max={300} step={10} value={budgetValue} onChange={handleInputChange} />
-                                <div className="budget-values d-flex align-items-center justify-content-between w-full">
-                                    <div className="left-value">$100K</div>
-                                    <div className="right-value">$<span id="budget-value">{budgetValue}</span>k</div>
-                                </div>
+                                {services.map(service => (
+                                    <div className="checkbox-btn" key={service.id}>
+                                        <input type="checkbox" name="service_type" id={service.id} defaultValue={service.label} />
+                                        <span className="checkbox-marker"><i className="las la-check" /></span>
+                                        <span className="checkbox-label">{service.label}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                         <div className="input-group">
-                            <label htmlFor="message">Message:</label>
-                            <textarea name="message" id="message" required defaultValue={""} />
+                            <label htmlFor="amazon-it">Su quali marketplace vendi o vuoi vendere?</label>
+                            <div className="checkbox-btns">
+                                {marketplaces.map(marketplace => (
+                                    <div className="checkbox-btn" key={marketplace.id}>
+                                        <input type="checkbox" name="marketplace" id={marketplace.id} defaultValue={marketplace.label} />
+                                        <span className="checkbox-marker"><i className="las la-check" /></span>
+                                        <span className="checkbox-label">{marketplace.label}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <label htmlFor="revenue-none">Fatturato mensile attuale sui marketplace:</label>
+                            <div className="radio-btns">
+                                {revenueRanges.map((range, index) => (
+                                    <div className="radio-btn" key={range.id}>
+                                        <input type="radio" id={range.id} name="monthly_revenue" defaultValue={range.label} defaultChecked={index === 0} />
+                                        <label htmlFor={range.id}>{range.label}</label>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <label htmlFor="message">Messaggio:</label>
+                            <textarea name="message" id="message" placeholder="Raccontaci cosa vendi, quali sistemi usi (es. Shopify, ERP) e quali obiettivi hai" required defaultValue={""} />
                         </div>
                         <div className="input-group">
                             <div className="single-checkbox checkbox-btn">
-                                <input type="checkbox" name="terms_condition" id="condition" />
+                                <input type="checkbox" name="privacy_consent" id="condition" required />
                                 <span className="checkbox-marker"><i className="las la-check" /></span>
-                                <span className="checkbox-label">Click the box and agree to our terms and condition</span>
+                                <span className="checkbox-label">Acconsento al trattamento dei dati personali per essere ricontattato</span>
                             </div>
                         </div>
                         <div className="input-group">
                             <button type="submit" className="theme-btn">
-                                Get Started
+                                Invia richiesta
                                 <Image src={btnArrow} alt="icon" />
                             </button>
                         </div>
